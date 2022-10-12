@@ -1,0 +1,20 @@
+{
+  "name": "daily-sync-up-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fast-csv/format": "^4.3.5",
+    "@fast-csv/parse": "^4.3.6",
+    "@supabase/supabase-js": "^1.35.7",
+    "dotenv": "^16.0.3",
+    "fast-csv": "^4.3.6",
+    "phone": "^3.1.28",
+    "uuid": "^9.0.0"
+  }
+}
