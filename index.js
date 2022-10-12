@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const csv = require("fast-csv");
 const http = require("https");
-const { phone } = require("phone");
+const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 const supabase = require("./supabaseClient");
 
@@ -196,7 +196,7 @@ const downloadImages = (images) => {
 
     for (var i = 0; i < images.length; i++) {
       const fileName = `${uuidv4()}-image.jpg`;
-      const filePath = `./images/${fileName}`;
+      const filePath = path.join(__dirname, `/images/${fileName}`);
       const file = fs.createWriteStream(filePath);
       const request = http.get(images[i], function (response) {
         response.pipe(file);
