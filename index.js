@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 const csv = require("fast-csv");
 const http = require("https");
-const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 const supabase = require("./supabaseClient");
 
